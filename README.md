@@ -1,4 +1,4 @@
-1. Introduction
+# 1. Introduction
 For years, algorithmic trading has grown in financial markets, including cryptocurrency.
 Crypto market volatility and 24/7 nature offer lucrative opportunities for algorithmic
 trading strategies. Unlike traditional assets, modelling and optimising cryptocurrency
@@ -15,7 +15,7 @@ compared to traditional assets. Our team relished this challenge to unlock alpha
 opportunities in the growing cryptocurrency space with data-driven and rigorously
 backtested algorithmic trading systems. The following sections detail our methodology,
 results, and insights.
-3. Model Design
+# 2. Model Design
 We have created a trading algorithm based on a Multi-Layer Perceptron (MLP) as a
 classifier with three classifications, Buy, Hold and Sell. We created a full standard analytic
 pipeline, which included gathering price and volume time-series data, preprocessing it with
@@ -26,7 +26,7 @@ the purpose of projecting price trends. We have used a LSTM model for predicting
 stocks prizes . Then we have combined both the indicators data and LSTM data using MLP
 classifier to predict whether to Buy, Sell or Hold and we have monte carlo simulation to
 predict stable guesses.
-The following technical indicators are used -
+### The following technical indicators are used -
 ● Bollinger bands. These are used to check whether prices are high or low on a
 relative basis. Given n periods, the price calculated using the n-period moving
 average is used as a reference price. Two lines are plotted above and below one
@@ -62,10 +62,10 @@ We also tried for Linear Regression model for doing the task of LSTM model.
 StandardScaler is applied to the feature variables. A linear regression model is instantiated
 and trained using the training data
 ![image](https://github.com/zaid-24/Algorithmic-Trading-Model-For-BTC-USDT-Crypto-Market-/assets/93991971/0cec8092-c93e-4f33-b71c-7e4ef9894de9)
-Monte Carlo Simulation
+### Monte Carlo Simulation
 We used Monte Carlo simulation to more stable predictions by simulating our strategy
 more time. This strengthens the process of evaluating strategies by adding another layer.
-4. Backtesting
+# 3. Backtesting
 Backtesting involves evaluating the strategy's performance on historical data. The
 calculated metrics contribute to the overall understanding of the strategy's effectiveness.
 Mean Net Profit: 132485.48
@@ -78,7 +78,7 @@ Net Profit Exceeding Benchmark: 255632.80754503317
 The plotted equity curve with Maximum Drawdown provides a visual representation of the
 strategy's performance over time
 ![image](https://github.com/zaid-24/Algorithmic-Trading-Model-For-BTC-USDT-Crypto-Market-/assets/93991971/afce2588-b957-4ae6-b055-70ef4b1406b4)
-5. Risk Management
+# 4. Risk Management
 Introduction
 We propose a risk management strategy for algorithmic trading using a Multi-Layer
 Perceptron (MLP) model. The MLP classifies various trading instances into buy, sell, or hold
@@ -105,12 +105,12 @@ However, as per our observations, ours is the best stop-loss method based on the
 provided and after testing our algorithm against different stop-loss strategies and
 evaluating the performance, ensuring a robust testing method where results aren’t being
 curve-fitted.
-Conclusion
+# Conclusion
 In conclusion, our proposed risk management strategy for algorithmic trading combines the
 predictive power of an MLP model with a dynamic stop-loss mechanism. This approach
 aims to balance the pursuit of profit with the need to limit potential losses, providing a
 robust framework for algorithmic trading.
-7. Other Approaches Employed
+# Other Approaches Employed
 1. Dilated Convolutional Neural Network (CNN) sequence-to-sequence (seq2seq)
 model for time series forecasting, specifically for predicting cryptocurrency market
 returns in the BTC/USDT market.
